@@ -1,0 +1,31 @@
+frame_id: "latlon_origin"
+stamp: 0.0 # 0.0 = now, positive value = # of seconds in future
+
+# darpa 1
+path: [
+  # x, y, z, heading
+  # latitude [deg], longitude [deg], amsl [m], heading [rad]
+  47.397800, 8.545700, 345, 0.3,
+  47.397900, 8.545700, 343, 0.0,
+  47.397900, 8.545800, 348, -0.3,
+  47.397800, 8.545800, 344, 0.0,
+]
+
+use_heading: true
+fly_now: true
+stop_at_waypoints: false
+loop: false
+relax_heading: false
+dont_prepend_current_state: false
+max_execution_time: 3.0
+max_deviation_from_path: 0.5
+
+constraints:
+  override: false
+  speed_horizontal: 1.0
+  speed_vertical: 1.0
+  acceleration_horizontal: 1.0
+  acceleration_vertical: 1.0
+  jerk_horizontal: 10.0
+  jerk_vertical: 10.0
+
